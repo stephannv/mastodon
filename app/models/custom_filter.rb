@@ -50,7 +50,7 @@ class CustomFilter < ApplicationRecord
     return @expires_in if defined?(@expires_in)
     return nil if expires_at.nil?
 
-    [30.minutes, 1.hour, 6.hours, 12.hours, 1.day, 1.week].find { |expires_in| expires_in.from_now >= expires_at }
+    [30.minutes, 1.hour, 6.hours, 12.hours, 1.day, 1.week, 1.month, 6.months, 1.year].find { |expires_in| expires_in.from_now >= expires_at }
   end
 
   def irreversible=(value)

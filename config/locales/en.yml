@@ -1231,8 +1231,11 @@ en:
     delete: Deactivate
     expired: Expired
     expires_in:
+      '15778476': 6 months
       '1800': 30 minutes
       '21600': 6 hours
+      '2629746': 1 month
+      '31556952': 1 year
       '3600': 1 hour
       '43200': 12 hours
       '604800': 1 week
